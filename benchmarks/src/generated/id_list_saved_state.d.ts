@@ -689,3 +689,187 @@ export namespace SplitTransposedOmitSavedIdListMessage {
     /** Shape of a SplitTransposedOmitSavedIdListMessage. */
     type $Shape = SplitTransposedOmitSavedIdListMessage.$Properties;
 }
+
+/**
+ * Properties of a FlatSavedIdListMessage.
+ * @deprecated Use FlatSavedIdListMessage.$Properties instead.
+ */
+export interface IFlatSavedIdListMessage extends FlatSavedIdListMessage.$Properties {
+}
+
+/** Represents a FlatSavedIdListMessage. */
+export class FlatSavedIdListMessage {
+
+    /**
+     * Constructs a new FlatSavedIdListMessage.
+     * @param [properties] Properties to set
+     */
+    constructor(properties?: FlatSavedIdListMessage.$Properties);
+
+    /** Unknown fields preserved while decoding when enabled */
+    $unknowns?: Uint8Array[];
+
+    /** FlatSavedIdListMessage bunchIds. */
+    bunchIds: string[];
+
+    /** FlatSavedIdListMessage startCounterIndexes. */
+    startCounterIndexes: number[];
+
+    /** FlatSavedIdListMessage startCounters. */
+    startCounters: number[];
+
+    /** FlatSavedIdListMessage counts. */
+    counts: number[];
+
+    /**
+     * Creates a new FlatSavedIdListMessage instance using the specified properties.
+     * @param [properties] Properties to set
+     * @returns FlatSavedIdListMessage instance
+     */
+    static create(properties: FlatSavedIdListMessage.$Shape): FlatSavedIdListMessage & FlatSavedIdListMessage.$Shape;
+    static create(properties?: FlatSavedIdListMessage.$Properties): FlatSavedIdListMessage;
+
+    /**
+     * Encodes the specified FlatSavedIdListMessage message. Does not implicitly {@link FlatSavedIdListMessage.verify|verify} messages.
+     * @param message FlatSavedIdListMessage message or plain object to encode
+     * @param [writer] Writer to encode to
+     * @returns Writer
+     */
+    static encode(message: FlatSavedIdListMessage.$Properties, writer?: $protobuf.Writer): $protobuf.Writer;
+
+    /**
+     * Decodes a FlatSavedIdListMessage message from the specified reader or buffer.
+     * @param reader Reader or buffer to decode from
+     * @param [length] Message length if known beforehand
+     * @returns {FlatSavedIdListMessage & FlatSavedIdListMessage.$Shape} FlatSavedIdListMessage
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): FlatSavedIdListMessage & FlatSavedIdListMessage.$Shape;
+}
+
+export namespace FlatSavedIdListMessage {
+
+    /** Properties of a FlatSavedIdListMessage. */
+    interface $Properties {
+
+        /** FlatSavedIdListMessage bunchIds */
+        bunchIds?: (string[]|null);
+
+        /** FlatSavedIdListMessage startCounterIndexes */
+        startCounterIndexes?: (number[]|null);
+
+        /** FlatSavedIdListMessage startCounters */
+        startCounters?: (number[]|null);
+
+        /** FlatSavedIdListMessage counts */
+        counts?: (number[]|null);
+
+        /** Unknown fields preserved while decoding when enabled */
+        $unknowns?: Uint8Array[];
+    }
+
+    /** Shape of a FlatSavedIdListMessage. */
+    type $Shape = FlatSavedIdListMessage.$Properties;
+}
+
+/**
+ * Properties of a CompactIdSavedIdListMessage.
+ * @deprecated Use CompactIdSavedIdListMessage.$Properties instead.
+ */
+export interface ICompactIdSavedIdListMessage extends CompactIdSavedIdListMessage.$Properties {
+}
+
+/** Represents a CompactIdSavedIdListMessage. */
+export class CompactIdSavedIdListMessage {
+
+    /**
+     * Constructs a new CompactIdSavedIdListMessage.
+     * @param [properties] Properties to set
+     */
+    constructor(properties?: CompactIdSavedIdListMessage.$Properties);
+
+    /** Unknown fields preserved while decoding when enabled */
+    $unknowns?: Uint8Array[];
+
+    /** CompactIdSavedIdListMessage clientIds. */
+    clientIds: string[];
+
+    /** CompactIdSavedIdListMessage clientIndexes. */
+    clientIndexes: number[];
+
+    /** CompactIdSavedIdListMessage counterChanges. */
+    counterChanges: number[];
+
+    /** CompactIdSavedIdListMessage rawBunchIds. */
+    rawBunchIds: string[];
+
+    /** CompactIdSavedIdListMessage startCounterIndexes. */
+    startCounterIndexes: number[];
+
+    /** CompactIdSavedIdListMessage startCounters. */
+    startCounters: number[];
+
+    /** CompactIdSavedIdListMessage counts. */
+    counts: number[];
+
+    /**
+     * Creates a new CompactIdSavedIdListMessage instance using the specified properties.
+     * @param [properties] Properties to set
+     * @returns CompactIdSavedIdListMessage instance
+     */
+    static create(properties: CompactIdSavedIdListMessage.$Shape): CompactIdSavedIdListMessage & CompactIdSavedIdListMessage.$Shape;
+    static create(properties?: CompactIdSavedIdListMessage.$Properties): CompactIdSavedIdListMessage;
+
+    /**
+     * Encodes the specified CompactIdSavedIdListMessage message. Does not implicitly {@link CompactIdSavedIdListMessage.verify|verify} messages.
+     * @param message CompactIdSavedIdListMessage message or plain object to encode
+     * @param [writer] Writer to encode to
+     * @returns Writer
+     */
+    static encode(message: CompactIdSavedIdListMessage.$Properties, writer?: $protobuf.Writer): $protobuf.Writer;
+
+    /**
+     * Decodes a CompactIdSavedIdListMessage message from the specified reader or buffer.
+     * @param reader Reader or buffer to decode from
+     * @param [length] Message length if known beforehand
+     * @returns {CompactIdSavedIdListMessage & CompactIdSavedIdListMessage.$Shape} CompactIdSavedIdListMessage
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): CompactIdSavedIdListMessage & CompactIdSavedIdListMessage.$Shape;
+}
+
+export namespace CompactIdSavedIdListMessage {
+
+    /** Properties of a CompactIdSavedIdListMessage. */
+    interface $Properties {
+
+        /** CompactIdSavedIdListMessage clientIds */
+        clientIds?: (string[]|null);
+
+        /** CompactIdSavedIdListMessage clientIndexes */
+        clientIndexes?: (number[]|null);
+
+        /** CompactIdSavedIdListMessage counterChanges */
+        counterChanges?: (number[]|null);
+
+        /** CompactIdSavedIdListMessage rawBunchIds */
+        rawBunchIds?: (string[]|null);
+
+        /** CompactIdSavedIdListMessage startCounterIndexes */
+        startCounterIndexes?: (number[]|null);
+
+        /** CompactIdSavedIdListMessage startCounters */
+        startCounters?: (number[]|null);
+
+        /** CompactIdSavedIdListMessage counts */
+        counts?: (number[]|null);
+
+        /** Unknown fields preserved while decoding when enabled */
+        $unknowns?: Uint8Array[];
+    }
+
+    /** Shape of a CompactIdSavedIdListMessage. */
+    type $Shape = CompactIdSavedIdListMessage.$Properties;
+}

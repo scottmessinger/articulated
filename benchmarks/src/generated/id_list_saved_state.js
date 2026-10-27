@@ -1960,6 +1960,541 @@ export const SplitTransposedOmitSavedIdListMessage = $root.SplitTransposedOmitSa
     return SplitTransposedOmitSavedIdListMessage;
 })();
 
+export const FlatSavedIdListMessage = $root.FlatSavedIdListMessage = (() => {
+
+    /**
+     * Properties of a FlatSavedIdListMessage.
+     * @typedef {Object} FlatSavedIdListMessage.$Properties
+     * @property {Array.<string>|null} [bunchIds] FlatSavedIdListMessage bunchIds
+     * @property {Array.<number>|null} [startCounterIndexes] FlatSavedIdListMessage startCounterIndexes
+     * @property {Array.<number>|null} [startCounters] FlatSavedIdListMessage startCounters
+     * @property {Array.<number>|null} [counts] FlatSavedIdListMessage counts
+     * @property {Array.<Uint8Array>} [$unknowns] Unknown fields preserved while decoding when enabled
+     */
+
+    /**
+     * Properties of a FlatSavedIdListMessage.
+     * @exports IFlatSavedIdListMessage
+     * @interface IFlatSavedIdListMessage
+     * @augments FlatSavedIdListMessage.$Properties
+     * @deprecated Use FlatSavedIdListMessage.$Properties instead.
+     */
+
+    /**
+     * Shape of a FlatSavedIdListMessage.
+     * @typedef {FlatSavedIdListMessage.$Properties} FlatSavedIdListMessage.$Shape
+     */
+
+    /**
+     * Constructs a new FlatSavedIdListMessage.
+     * @exports FlatSavedIdListMessage
+     * @classdesc Represents a FlatSavedIdListMessage.
+     * @constructor
+     * @param {FlatSavedIdListMessage.$Properties=} [properties] Properties to set
+     * @property {Array.<Uint8Array>} [$unknowns] Unknown fields preserved while decoding when enabled
+     */
+    const FlatSavedIdListMessage = function (properties) {
+        this.bunchIds = [];
+        this.startCounterIndexes = [];
+        this.startCounters = [];
+        this.counts = [];
+        if (properties)
+            for (let keys = $Object.keys(properties), i = 0; i < keys.length; ++i)
+                if (properties[keys[i]] != null && keys[i] !== "__proto__")
+                    this[keys[i]] = properties[keys[i]];
+    };
+
+    /**
+     * FlatSavedIdListMessage bunchIds.
+     * @member {Array.<string>} bunchIds
+     * @memberof FlatSavedIdListMessage
+     * @instance
+     */
+    FlatSavedIdListMessage.prototype.bunchIds = $util.emptyArray;
+
+    /**
+     * FlatSavedIdListMessage startCounterIndexes.
+     * @member {Array.<number>} startCounterIndexes
+     * @memberof FlatSavedIdListMessage
+     * @instance
+     */
+    FlatSavedIdListMessage.prototype.startCounterIndexes = $util.emptyArray;
+
+    /**
+     * FlatSavedIdListMessage startCounters.
+     * @member {Array.<number>} startCounters
+     * @memberof FlatSavedIdListMessage
+     * @instance
+     */
+    FlatSavedIdListMessage.prototype.startCounters = $util.emptyArray;
+
+    /**
+     * FlatSavedIdListMessage counts.
+     * @member {Array.<number>} counts
+     * @memberof FlatSavedIdListMessage
+     * @instance
+     */
+    FlatSavedIdListMessage.prototype.counts = $util.emptyArray;
+
+    /**
+     * Creates a new FlatSavedIdListMessage instance using the specified properties.
+     * @function create
+     * @memberof FlatSavedIdListMessage
+     * @static
+     * @param {FlatSavedIdListMessage.$Properties=} [properties] Properties to set
+     * @returns {FlatSavedIdListMessage} FlatSavedIdListMessage instance
+     * @type {{
+     *   (properties: FlatSavedIdListMessage.$Shape): FlatSavedIdListMessage & FlatSavedIdListMessage.$Shape;
+     *   (properties?: FlatSavedIdListMessage.$Properties): FlatSavedIdListMessage;
+     * }}
+     */
+    FlatSavedIdListMessage.create = function(properties) {
+        return new FlatSavedIdListMessage(properties);
+    };
+
+    /**
+     * Encodes the specified FlatSavedIdListMessage message. Does not implicitly {@link FlatSavedIdListMessage.verify|verify} messages.
+     * @function encode
+     * @memberof FlatSavedIdListMessage
+     * @static
+     * @param {FlatSavedIdListMessage.$Properties} message FlatSavedIdListMessage message or plain object to encode
+     * @param {$protobuf.Writer} [writer] Writer to encode to
+     * @returns {$protobuf.Writer} Writer
+     */
+    FlatSavedIdListMessage.encode = function (message, writer, _depth) {
+        if (!writer)
+            writer = $Writer.create();
+        if (_depth === $undefined)
+            _depth = 0;
+        if (_depth > $util.recursionLimit)
+            throw $Error("max depth exceeded");
+        if (message.bunchIds != null && message.bunchIds.length)
+            for (let i = 0; i < message.bunchIds.length; ++i)
+                writer.uint32(/* id 1, wireType 2 =*/10).string(message.bunchIds[i]);
+        if (message.startCounterIndexes != null && message.startCounterIndexes.length)
+            writer.uint32(/* id 2, wireType 2 =*/18).uint64s(message.startCounterIndexes);
+        if (message.startCounters != null && message.startCounters.length)
+            writer.uint32(/* id 3, wireType 2 =*/26).uint64s(message.startCounters);
+        if (message.counts != null && message.counts.length)
+            writer.uint32(/* id 4, wireType 2 =*/34).sint64s(message.counts);
+        if (message.$unknowns != null && $Object.hasOwnProperty.call(message, "$unknowns"))
+            for (let i = 0; i < message.$unknowns.length; ++i)
+                writer.raw(message.$unknowns[i]);
+        return writer;
+    };
+
+    /**
+     * Decodes a FlatSavedIdListMessage message from the specified reader or buffer.
+     * @function decode
+     * @memberof FlatSavedIdListMessage
+     * @static
+     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+     * @param {number} [length] Message length if known beforehand
+     * @returns {FlatSavedIdListMessage & FlatSavedIdListMessage.$Shape} FlatSavedIdListMessage
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    FlatSavedIdListMessage.decode = function (reader, length, _end, _depth, _target) {
+        if (!(reader instanceof $Reader))
+            reader = $Reader.create(reader);
+        if (_depth === $undefined)
+            _depth = 0;
+        if (_depth > $Reader.recursionLimit)
+            throw $Error("max depth exceeded");
+        let end, message;
+        if (length === $undefined)
+            end = reader.len;
+        else {
+            end = reader.pos + length;
+            if (end > reader.len)
+                throw $RangeError("index out of range");
+            length = reader.len;
+            reader.len = end;
+        }
+        message = _target || new $root.FlatSavedIdListMessage();
+        while (reader.pos < end) {
+            let start = reader.pos;
+            let tag = reader.tag();
+            if (tag === _end) {
+                _end = $undefined;
+                break;
+            }
+            let wireType = tag & 7;
+            switch (tag >>>= 3) {
+            case 1: {
+                    if (wireType !== 2)
+                        break;
+                    if (!(message.bunchIds && message.bunchIds.length))
+                        message.bunchIds = [];
+                    message.bunchIds.push(reader.stringVerify());
+                    continue;
+                }
+            case 2: {
+                    if (wireType === 2) {
+                        if (!(message.startCounterIndexes && message.startCounterIndexes.length))
+                            message.startCounterIndexes = [];
+                        reader.uint64s(message.startCounterIndexes);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.startCounterIndexes && message.startCounterIndexes.length))
+                        message.startCounterIndexes = [];
+                    message.startCounterIndexes.push(reader.uint64());
+                    continue;
+                }
+            case 3: {
+                    if (wireType === 2) {
+                        if (!(message.startCounters && message.startCounters.length))
+                            message.startCounters = [];
+                        reader.uint64s(message.startCounters);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.startCounters && message.startCounters.length))
+                        message.startCounters = [];
+                    message.startCounters.push(reader.uint64());
+                    continue;
+                }
+            case 4: {
+                    if (wireType === 2) {
+                        if (!(message.counts && message.counts.length))
+                            message.counts = [];
+                        reader.sint64s(message.counts);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.counts && message.counts.length))
+                        message.counts = [];
+                    message.counts.push(reader.sint64());
+                    continue;
+                }
+            }
+            reader.skipType(wireType, _depth, tag);
+            if (!reader.discardUnknown) {
+                $util.makeProp(message, "$unknowns", false);
+                (message.$unknowns || (message.$unknowns = [])).push(reader.raw(start, reader.pos));
+            }
+        }
+        if (length !== $undefined) {
+            if (reader.pos !== end)
+                throw $RangeError("index out of range");
+            reader.len = length;
+        }
+        if (_end !== $undefined)
+            throw $Error("missing end group");
+        return message;
+    };
+
+    return FlatSavedIdListMessage;
+})();
+
+export const CompactIdSavedIdListMessage = $root.CompactIdSavedIdListMessage = (() => {
+
+    /**
+     * Properties of a CompactIdSavedIdListMessage.
+     * @typedef {Object} CompactIdSavedIdListMessage.$Properties
+     * @property {Array.<string>|null} [clientIds] CompactIdSavedIdListMessage clientIds
+     * @property {Array.<number>|null} [clientIndexes] CompactIdSavedIdListMessage clientIndexes
+     * @property {Array.<number>|null} [counterChanges] CompactIdSavedIdListMessage counterChanges
+     * @property {Array.<string>|null} [rawBunchIds] CompactIdSavedIdListMessage rawBunchIds
+     * @property {Array.<number>|null} [startCounterIndexes] CompactIdSavedIdListMessage startCounterIndexes
+     * @property {Array.<number>|null} [startCounters] CompactIdSavedIdListMessage startCounters
+     * @property {Array.<number>|null} [counts] CompactIdSavedIdListMessage counts
+     * @property {Array.<Uint8Array>} [$unknowns] Unknown fields preserved while decoding when enabled
+     */
+
+    /**
+     * Properties of a CompactIdSavedIdListMessage.
+     * @exports ICompactIdSavedIdListMessage
+     * @interface ICompactIdSavedIdListMessage
+     * @augments CompactIdSavedIdListMessage.$Properties
+     * @deprecated Use CompactIdSavedIdListMessage.$Properties instead.
+     */
+
+    /**
+     * Shape of a CompactIdSavedIdListMessage.
+     * @typedef {CompactIdSavedIdListMessage.$Properties} CompactIdSavedIdListMessage.$Shape
+     */
+
+    /**
+     * Constructs a new CompactIdSavedIdListMessage.
+     * @exports CompactIdSavedIdListMessage
+     * @classdesc Represents a CompactIdSavedIdListMessage.
+     * @constructor
+     * @param {CompactIdSavedIdListMessage.$Properties=} [properties] Properties to set
+     * @property {Array.<Uint8Array>} [$unknowns] Unknown fields preserved while decoding when enabled
+     */
+    const CompactIdSavedIdListMessage = function (properties) {
+        this.clientIds = [];
+        this.clientIndexes = [];
+        this.counterChanges = [];
+        this.rawBunchIds = [];
+        this.startCounterIndexes = [];
+        this.startCounters = [];
+        this.counts = [];
+        if (properties)
+            for (let keys = $Object.keys(properties), i = 0; i < keys.length; ++i)
+                if (properties[keys[i]] != null && keys[i] !== "__proto__")
+                    this[keys[i]] = properties[keys[i]];
+    };
+
+    /**
+     * CompactIdSavedIdListMessage clientIds.
+     * @member {Array.<string>} clientIds
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.clientIds = $util.emptyArray;
+
+    /**
+     * CompactIdSavedIdListMessage clientIndexes.
+     * @member {Array.<number>} clientIndexes
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.clientIndexes = $util.emptyArray;
+
+    /**
+     * CompactIdSavedIdListMessage counterChanges.
+     * @member {Array.<number>} counterChanges
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.counterChanges = $util.emptyArray;
+
+    /**
+     * CompactIdSavedIdListMessage rawBunchIds.
+     * @member {Array.<string>} rawBunchIds
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.rawBunchIds = $util.emptyArray;
+
+    /**
+     * CompactIdSavedIdListMessage startCounterIndexes.
+     * @member {Array.<number>} startCounterIndexes
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.startCounterIndexes = $util.emptyArray;
+
+    /**
+     * CompactIdSavedIdListMessage startCounters.
+     * @member {Array.<number>} startCounters
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.startCounters = $util.emptyArray;
+
+    /**
+     * CompactIdSavedIdListMessage counts.
+     * @member {Array.<number>} counts
+     * @memberof CompactIdSavedIdListMessage
+     * @instance
+     */
+    CompactIdSavedIdListMessage.prototype.counts = $util.emptyArray;
+
+    /**
+     * Creates a new CompactIdSavedIdListMessage instance using the specified properties.
+     * @function create
+     * @memberof CompactIdSavedIdListMessage
+     * @static
+     * @param {CompactIdSavedIdListMessage.$Properties=} [properties] Properties to set
+     * @returns {CompactIdSavedIdListMessage} CompactIdSavedIdListMessage instance
+     * @type {{
+     *   (properties: CompactIdSavedIdListMessage.$Shape): CompactIdSavedIdListMessage & CompactIdSavedIdListMessage.$Shape;
+     *   (properties?: CompactIdSavedIdListMessage.$Properties): CompactIdSavedIdListMessage;
+     * }}
+     */
+    CompactIdSavedIdListMessage.create = function(properties) {
+        return new CompactIdSavedIdListMessage(properties);
+    };
+
+    /**
+     * Encodes the specified CompactIdSavedIdListMessage message. Does not implicitly {@link CompactIdSavedIdListMessage.verify|verify} messages.
+     * @function encode
+     * @memberof CompactIdSavedIdListMessage
+     * @static
+     * @param {CompactIdSavedIdListMessage.$Properties} message CompactIdSavedIdListMessage message or plain object to encode
+     * @param {$protobuf.Writer} [writer] Writer to encode to
+     * @returns {$protobuf.Writer} Writer
+     */
+    CompactIdSavedIdListMessage.encode = function (message, writer, _depth) {
+        if (!writer)
+            writer = $Writer.create();
+        if (_depth === $undefined)
+            _depth = 0;
+        if (_depth > $util.recursionLimit)
+            throw $Error("max depth exceeded");
+        if (message.clientIds != null && message.clientIds.length)
+            for (let i = 0; i < message.clientIds.length; ++i)
+                writer.uint32(/* id 1, wireType 2 =*/10).string(message.clientIds[i]);
+        if (message.clientIndexes != null && message.clientIndexes.length)
+            writer.uint32(/* id 2, wireType 2 =*/18).uint64s(message.clientIndexes);
+        if (message.counterChanges != null && message.counterChanges.length)
+            writer.uint32(/* id 3, wireType 2 =*/26).sint64s(message.counterChanges);
+        if (message.rawBunchIds != null && message.rawBunchIds.length)
+            for (let i = 0; i < message.rawBunchIds.length; ++i)
+                writer.uint32(/* id 4, wireType 2 =*/34).string(message.rawBunchIds[i]);
+        if (message.startCounterIndexes != null && message.startCounterIndexes.length)
+            writer.uint32(/* id 5, wireType 2 =*/42).uint64s(message.startCounterIndexes);
+        if (message.startCounters != null && message.startCounters.length)
+            writer.uint32(/* id 6, wireType 2 =*/50).uint64s(message.startCounters);
+        if (message.counts != null && message.counts.length)
+            writer.uint32(/* id 7, wireType 2 =*/58).sint64s(message.counts);
+        if (message.$unknowns != null && $Object.hasOwnProperty.call(message, "$unknowns"))
+            for (let i = 0; i < message.$unknowns.length; ++i)
+                writer.raw(message.$unknowns[i]);
+        return writer;
+    };
+
+    /**
+     * Decodes a CompactIdSavedIdListMessage message from the specified reader or buffer.
+     * @function decode
+     * @memberof CompactIdSavedIdListMessage
+     * @static
+     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+     * @param {number} [length] Message length if known beforehand
+     * @returns {CompactIdSavedIdListMessage & CompactIdSavedIdListMessage.$Shape} CompactIdSavedIdListMessage
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    CompactIdSavedIdListMessage.decode = function (reader, length, _end, _depth, _target) {
+        if (!(reader instanceof $Reader))
+            reader = $Reader.create(reader);
+        if (_depth === $undefined)
+            _depth = 0;
+        if (_depth > $Reader.recursionLimit)
+            throw $Error("max depth exceeded");
+        let end, message;
+        if (length === $undefined)
+            end = reader.len;
+        else {
+            end = reader.pos + length;
+            if (end > reader.len)
+                throw $RangeError("index out of range");
+            length = reader.len;
+            reader.len = end;
+        }
+        message = _target || new $root.CompactIdSavedIdListMessage();
+        while (reader.pos < end) {
+            let start = reader.pos;
+            let tag = reader.tag();
+            if (tag === _end) {
+                _end = $undefined;
+                break;
+            }
+            let wireType = tag & 7;
+            switch (tag >>>= 3) {
+            case 1: {
+                    if (wireType !== 2)
+                        break;
+                    if (!(message.clientIds && message.clientIds.length))
+                        message.clientIds = [];
+                    message.clientIds.push(reader.stringVerify());
+                    continue;
+                }
+            case 2: {
+                    if (wireType === 2) {
+                        if (!(message.clientIndexes && message.clientIndexes.length))
+                            message.clientIndexes = [];
+                        reader.uint64s(message.clientIndexes);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.clientIndexes && message.clientIndexes.length))
+                        message.clientIndexes = [];
+                    message.clientIndexes.push(reader.uint64());
+                    continue;
+                }
+            case 3: {
+                    if (wireType === 2) {
+                        if (!(message.counterChanges && message.counterChanges.length))
+                            message.counterChanges = [];
+                        reader.sint64s(message.counterChanges);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.counterChanges && message.counterChanges.length))
+                        message.counterChanges = [];
+                    message.counterChanges.push(reader.sint64());
+                    continue;
+                }
+            case 4: {
+                    if (wireType !== 2)
+                        break;
+                    if (!(message.rawBunchIds && message.rawBunchIds.length))
+                        message.rawBunchIds = [];
+                    message.rawBunchIds.push(reader.stringVerify());
+                    continue;
+                }
+            case 5: {
+                    if (wireType === 2) {
+                        if (!(message.startCounterIndexes && message.startCounterIndexes.length))
+                            message.startCounterIndexes = [];
+                        reader.uint64s(message.startCounterIndexes);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.startCounterIndexes && message.startCounterIndexes.length))
+                        message.startCounterIndexes = [];
+                    message.startCounterIndexes.push(reader.uint64());
+                    continue;
+                }
+            case 6: {
+                    if (wireType === 2) {
+                        if (!(message.startCounters && message.startCounters.length))
+                            message.startCounters = [];
+                        reader.uint64s(message.startCounters);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.startCounters && message.startCounters.length))
+                        message.startCounters = [];
+                    message.startCounters.push(reader.uint64());
+                    continue;
+                }
+            case 7: {
+                    if (wireType === 2) {
+                        if (!(message.counts && message.counts.length))
+                            message.counts = [];
+                        reader.sint64s(message.counts);
+                        continue;
+                    }
+                    if (wireType !== 0)
+                        break;
+                    if (!(message.counts && message.counts.length))
+                        message.counts = [];
+                    message.counts.push(reader.sint64());
+                    continue;
+                }
+            }
+            reader.skipType(wireType, _depth, tag);
+            if (!reader.discardUnknown) {
+                $util.makeProp(message, "$unknowns", false);
+                (message.$unknowns || (message.$unknowns = [])).push(reader.raw(start, reader.pos));
+            }
+        }
+        if (length !== $undefined) {
+            if (reader.pos !== end)
+                throw $RangeError("index out of range");
+            reader.len = length;
+        }
+        if (_end !== $undefined)
+            throw $Error("missing end group");
+        return message;
+    };
+
+    return CompactIdSavedIdListMessage;
+})();
+
 export {
   $root as default
 };

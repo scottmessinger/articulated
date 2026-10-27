@@ -83,3 +83,30 @@ message SplitTransposedOmitSavedIdListMessage {
   // Negative count means deleted.
   repeated sint32 counts = 5;
 }
+
+// Flat: TransposedOmit with 64-bit varints, so counters keep the full
+// safe-integer range while small values still take 1-2 bytes. Each bunchId is
+// its own length-prefixed entry; IDs of any length are allowed.
+message FlatSavedIdListMessage {
+  repeated string bunchIds = 1;
+  repeated uint64 startCounterIndexes = 2;
+  repeated uint64 startCounters = 3;
+  // Negative count means deleted.
+  repeated sint64 counts = 4;
+}
+
+// CompactId: FlatSavedIdListMessage, but bunchIds of the form
+// "<clientId>_<base36 counter>" are stored as numbers. Each run has a client
+// index: k >= 1 means clientIds[k - 1] with its counter given as the change
+// from that client's previous run; 0 means the next entry of rawBunchIds
+// (any ID that doesn't have that form).
+message CompactIdSavedIdListMessage {
+  repeated string clientIds = 1;
+  repeated uint64 clientIndexes = 2;
+  repeated sint64 counterChanges = 3;
+  repeated string rawBunchIds = 4;
+  repeated uint64 startCounterIndexes = 5;
+  repeated uint64 startCounters = 6;
+  // Negative count means deleted.
+  repeated sint64 counts = 7;
+}
