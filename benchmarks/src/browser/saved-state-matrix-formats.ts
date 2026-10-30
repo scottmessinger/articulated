@@ -243,6 +243,16 @@ export const encodings: Encoding[] = [
     splitNumbers,
     { pack: joinIds, unpack: splitIds },
   ),
+  perField(
+    "json",
+    "Every array as a JSON array string",
+    (values) => JSON.stringify(values),
+    (value) => JSON.parse(value as string) as number[],
+    {
+      pack: (values) => JSON.stringify(values),
+      unpack: (value) => JSON.parse(value as string) as string[],
+    },
+  ),
   {
     id: "protobuf",
     label: "One protobuf blob",
