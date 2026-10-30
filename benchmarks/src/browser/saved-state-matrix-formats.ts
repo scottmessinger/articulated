@@ -192,17 +192,6 @@ function perField(
     },
   };
 }
-/** Comma-separated decimal text, e.g. [3, 0, -1] -> "3,0,-1". */
-const joinNumbers = (values: number[]) => values.join(",");
-const splitNumbers = (value: unknown) =>
-  value === "" ? [] : (value as string).split(",").map(Number);
-/** Comma-separated IDs. Each ID stays its own entry; no fixed length assumed. */
-const joinIds = (values: string[]) => {
-  assert(values.every((v) => v !== "" && !v.includes(",")));
-  return values.join(",");
-};
-const splitIds = (value: unknown) =>
-  value === "" ? [] : (value as string).split(",");
 const binaryBytes = (value: unknown) => {
   assert(value instanceof Binary);
   return value.value();
@@ -229,19 +218,6 @@ export const encodings: Encoding[] = [
       signed
         ? readSintVarints(binaryBytes(value))
         : readUintVarints(binaryBytes(value)),
-  ),
-  perField(
-    "string",
-    "Number arrays as comma-separated strings",
-    joinNumbers,
-    splitNumbers,
-  ),
-  perField(
-    "string-all",
-    "Every array as a comma-separated string",
-    joinNumbers,
-    splitNumbers,
-    { pack: joinIds, unpack: splitIds },
   ),
   perField(
     "json",

@@ -1,0 +1,1217 @@
+{
+  "complete": true,
+  "generatedAt": "2026-10-30T01:05:08.120Z",
+  "version": "8.0.23",
+  "mongoGitVersion": "nogitversion",
+  "nodeVersion": "v22.22.0",
+  "platform": "linux",
+  "arch": "x64",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz",
+  "dbPath": "/tmp/articulated-saved-state-matrix-json-1",
+  "port": 27186,
+  "documents": 1,
+  "runs": 11757,
+  "distinctBunches": 5382,
+  "idModels": {
+    "random": "Each distinct bunchId replaced by an independent 8-character base64url SHA-256 prefix per document (collision-checked)",
+    "client-counter": "client_counter IDs with each client renamed to an independent 10-character string per document"
+  },
+  "procedure": [
+    "Fresh local standalone bound to 127.0.0.1:27186; dbPath and bind options verified before writes",
+    "One collection per cell and compressor; 100 independently renamed documents; inserted in batches of five",
+    "Full round trip (bunchIds and SavedIdList) checked for the first and last document",
+    "compact every collection; fsync checkpoint; compact again; fsync with lock",
+    "Actual collection .wt file length read while locked and checked equal to storageSize; compressor checked"
+  ],
+  "measurement": "Physical collection file bytes / documents, including allocation/free space; excludes _id indexes and shared files.",
+  "rows": [
+    {
+      "collection": "zstd_random_objects_plain",
+      "dataset": "random",
+      "arrangement": "objects",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "b16ab3522f190932e54916322d2c934682f080430f2dc35c35ba3f9555b0f40e",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 126976,
+      "storageBytesPerDocument": 126976,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 870691,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-7-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_per_run_plain",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "13413e07cb95c857e6d8e7cbac83b56f265f7502d8e92b33bc5a11e2ddde2bbe",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 118784,
+      "storageBytesPerDocument": 118784,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 342347,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-9-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_per_run_float64",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "float64",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "ebad311e35f51e7823d18066ed683da12c2de645041f9f6e43e7dea05f5ba6c7",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 94208,
+      "storageBytesPerDocument": 94208,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 318186,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-11-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_per_run_varint",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "varint",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "57847a68bcd1ca92660a8357be53508b7766860c66b488843c311b2eecea93c5",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 90112,
+      "storageBytesPerDocument": 90112,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 236548,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-13-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_per_run_json",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "json",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "40a64b9f4e63a5f2bedd085cc5df3a1884486f8d9dcc3005fe318c4778e05652",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 77824,
+      "storageBytesPerDocument": 77824,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 163618,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-15-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_per_run_protobuf",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "protobuf",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "46209cdcc3dc204f178ae51f6227e65101723be2fa3ca6d594b97e655944935f",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 77824,
+      "storageBytesPerDocument": 77824,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 130017,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-17-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_once_plain",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "ca07335e45a701931dfc6980031a6fbc8dd45a590575dfaa0fe1c9378545d023",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 131072,
+      "storageBytesPerDocument": 131072,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 337696,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-19-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_once_float64",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "float64",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "c555492d36caa9cf0105f981687164877eedad53116d7c412744a817adfa0f1b",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 90112,
+      "storageBytesPerDocument": 90112,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 289374,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-21-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_once_varint",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "varint",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "385ddbb1d1f5efb9acc8e4c8281ee4f64a4184ca7c1e21e3bcf2c9b7f1ccf5ac",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 81920,
+      "storageBytesPerDocument": 81920,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 125729,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-23-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_once_json",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "json",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "5f820c9f400dd38e67c5aabc33b7bdfe45e6fb37633f59cc0f38b6b33b2a1188",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 77824,
+      "storageBytesPerDocument": 77824,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 119566,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-25-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_random_id_once_protobuf",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "protobuf",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "954aeee4f853322d85e642342af1358d37e0a93ecb38ea5ab691b84bc9e30c02",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 73728,
+      "storageBytesPerDocument": 73728,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 78319,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-27-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_objects_plain",
+      "dataset": "client-counter",
+      "arrangement": "objects",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "7b83d00dd4648f4ba0d9aff5299deb6745b1d19ce631304f91afa39bc4aeece8",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 98304,
+      "storageBytesPerDocument": 98304,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 938065,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-29-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_per_run_plain",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "c57ce75e2790346a482b13e7cc3e9b57cf6c3df396b7a1e4f128dd480681e83f",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 94208,
+      "storageBytesPerDocument": 94208,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 409721,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-31-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_per_run_float64",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "float64",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "07cdaa80cb6166575512f15933ffd51e37a409197cfa7621bfbd3b46b68987d9",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 69632,
+      "storageBytesPerDocument": 69632,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 385560,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-33-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_per_run_varint",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "varint",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "78a8ecd69476b982a3896062c97192a4cb89e58ba97d24d0b4c410a63204b613",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 65536,
+      "storageBytesPerDocument": 65536,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 303922,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-35-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_per_run_json",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "json",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "2a22ad847f69c3304dbae133d17d336cb6a3907917ae39cba1826a1000cd6cb2",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 49152,
+      "storageBytesPerDocument": 49152,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 230992,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-37-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_per_run_protobuf",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "protobuf",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "402d28e29f61b6f8886e9db6a2cfd48eec570519c0844c751e67fce487ea09f1",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 45056,
+      "storageBytesPerDocument": 45056,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 197391,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-39-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_once_plain",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "608b1f40a436dc73a05adb7facd2d7b13bc2a266b111a34c65095ee10201d626",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 106496,
+      "storageBytesPerDocument": 106496,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 368656,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-41-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_once_float64",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "float64",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "9ab849a239330427b7e653916bd85c2ace926a8268d00d72ac875763fb94b8e8",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 65536,
+      "storageBytesPerDocument": 65536,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 320334,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-43-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_once_varint",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "varint",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "dced996cd09ae30b65065ab785a85b8d8a958aafafab14667ab84f38de5e556a",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 53248,
+      "storageBytesPerDocument": 53248,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 156689,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-45-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_once_json",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "json",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "8f77493094bbb764d49f5f54694e22bb6274d106d979b6b4297f8fb0e7e717d7",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 49152,
+      "storageBytesPerDocument": 49152,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 150526,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-47-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_id_once_protobuf",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "protobuf",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "9f1c671f92b749cd78e826ac1426ea28fc15d2a066b6da19b764a5d42895351e",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 45056,
+      "storageBytesPerDocument": 45056,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 109279,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-49-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_client_counter_numbers_plain",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "plain",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "a0be6931569569009ee44c8fa951086e01c29007db892905d7f989f8f71e1b27",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 94208,
+      "storageBytesPerDocument": 94208,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 354811,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-51-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_client_counter_numbers_float64",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "float64",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "127a6f58d9064642404dde6661393d796f971a89c4d2b6857782a5614def3df2",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 49152,
+      "storageBytesPerDocument": 49152,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 282328,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-53-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_client_counter_numbers_varint",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "varint",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "2fa12939f0136b31565a5809e22478910a1c1289bb27223dcb90ef629befde7c",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 36864,
+      "storageBytesPerDocument": 36864,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 39148,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-55-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_client_counter_numbers_json",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "json",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "7dcee7cd01e17b86d8846581577a3d5fda46a95b59ac30493572785df5980273",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 40960,
+      "storageBytesPerDocument": 40960,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 95983,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-57-9928597156370555882.wt"
+    },
+    {
+      "collection": "zstd_client_counter_client_counter_numbers_protobuf",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "protobuf",
+      "compressor": "zstd",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "5b55c9b3d9a47e209b2aa589b82abacda2f5e46c0f9af3b89b3ecf90bfca24cb",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 36864,
+      "storageBytesPerDocument": 36864,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 39035,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-59-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_objects_plain",
+      "dataset": "random",
+      "arrangement": "objects",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "b16ab3522f190932e54916322d2c934682f080430f2dc35c35ba3f9555b0f40e",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 212992,
+      "storageBytesPerDocument": 212992,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 870691,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-61-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_per_run_plain",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "13413e07cb95c857e6d8e7cbac83b56f265f7502d8e92b33bc5a11e2ddde2bbe",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 188416,
+      "storageBytesPerDocument": 188416,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 342347,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-63-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_per_run_float64",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "float64",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "ebad311e35f51e7823d18066ed683da12c2de645041f9f6e43e7dea05f5ba6c7",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 151552,
+      "storageBytesPerDocument": 151552,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 318186,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-65-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_per_run_varint",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "varint",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "57847a68bcd1ca92660a8357be53508b7766860c66b488843c311b2eecea93c5",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 139264,
+      "storageBytesPerDocument": 139264,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 236548,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-67-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_per_run_json",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "json",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "40a64b9f4e63a5f2bedd085cc5df3a1884486f8d9dcc3005fe318c4778e05652",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 102400,
+      "storageBytesPerDocument": 102400,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 163618,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-69-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_per_run_protobuf",
+      "dataset": "random",
+      "arrangement": "id-per-run",
+      "encoding": "protobuf",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "46209cdcc3dc204f178ae51f6227e65101723be2fa3ca6d594b97e655944935f",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 98304,
+      "storageBytesPerDocument": 98304,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 130017,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-71-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_once_plain",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "ca07335e45a701931dfc6980031a6fbc8dd45a590575dfaa0fe1c9378545d023",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 212992,
+      "storageBytesPerDocument": 212992,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 337696,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-73-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_once_float64",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "float64",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "c555492d36caa9cf0105f981687164877eedad53116d7c412744a817adfa0f1b",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 135168,
+      "storageBytesPerDocument": 135168,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 289374,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-75-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_once_varint",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "varint",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "385ddbb1d1f5efb9acc8e4c8281ee4f64a4184ca7c1e21e3bcf2c9b7f1ccf5ac",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 110592,
+      "storageBytesPerDocument": 110592,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 125729,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-77-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_once_json",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "json",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "5f820c9f400dd38e67c5aabc33b7bdfe45e6fb37633f59cc0f38b6b33b2a1188",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 102400,
+      "storageBytesPerDocument": 102400,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 119566,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-79-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_random_id_once_protobuf",
+      "dataset": "random",
+      "arrangement": "id-once",
+      "encoding": "protobuf",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "954aeee4f853322d85e642342af1358d37e0a93ecb38ea5ab691b84bc9e30c02",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 98304,
+      "storageBytesPerDocument": 98304,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 78319,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-81-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_objects_plain",
+      "dataset": "client-counter",
+      "arrangement": "objects",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "7b83d00dd4648f4ba0d9aff5299deb6745b1d19ce631304f91afa39bc4aeece8",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 180224,
+      "storageBytesPerDocument": 180224,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 938065,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-83-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_per_run_plain",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "c57ce75e2790346a482b13e7cc3e9b57cf6c3df396b7a1e4f128dd480681e83f",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 163840,
+      "storageBytesPerDocument": 163840,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 409721,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-85-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_per_run_float64",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "float64",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "07cdaa80cb6166575512f15933ffd51e37a409197cfa7621bfbd3b46b68987d9",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 122880,
+      "storageBytesPerDocument": 122880,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 385560,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-87-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_per_run_varint",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "varint",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "78a8ecd69476b982a3896062c97192a4cb89e58ba97d24d0b4c410a63204b613",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 110592,
+      "storageBytesPerDocument": 110592,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 303922,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-89-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_per_run_json",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "json",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "2a22ad847f69c3304dbae133d17d336cb6a3907917ae39cba1826a1000cd6cb2",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 77824,
+      "storageBytesPerDocument": 77824,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 230992,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-91-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_per_run_protobuf",
+      "dataset": "client-counter",
+      "arrangement": "id-per-run",
+      "encoding": "protobuf",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "402d28e29f61b6f8886e9db6a2cfd48eec570519c0844c751e67fce487ea09f1",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 73728,
+      "storageBytesPerDocument": 73728,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 197391,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-93-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_once_plain",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "608b1f40a436dc73a05adb7facd2d7b13bc2a266b111a34c65095ee10201d626",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 188416,
+      "storageBytesPerDocument": 188416,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 368656,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-95-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_once_float64",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "float64",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "9ab849a239330427b7e653916bd85c2ace926a8268d00d72ac875763fb94b8e8",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 106496,
+      "storageBytesPerDocument": 106496,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 320334,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-97-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_once_varint",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "varint",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "dced996cd09ae30b65065ab785a85b8d8a958aafafab14667ab84f38de5e556a",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 86016,
+      "storageBytesPerDocument": 86016,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 156689,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-99-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_once_json",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "json",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "8f77493094bbb764d49f5f54694e22bb6274d106d979b6b4297f8fb0e7e717d7",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 73728,
+      "storageBytesPerDocument": 73728,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 150526,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-101-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_id_once_protobuf",
+      "dataset": "client-counter",
+      "arrangement": "id-once",
+      "encoding": "protobuf",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "9f1c671f92b749cd78e826ac1426ea28fc15d2a066b6da19b764a5d42895351e",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 65536,
+      "storageBytesPerDocument": 65536,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 109279,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-103-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_client_counter_numbers_plain",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "plain",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "a0be6931569569009ee44c8fa951086e01c29007db892905d7f989f8f71e1b27",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 200704,
+      "storageBytesPerDocument": 200704,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 354811,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-105-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_client_counter_numbers_float64",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "float64",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "127a6f58d9064642404dde6661393d796f971a89c4d2b6857782a5614def3df2",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 73728,
+      "storageBytesPerDocument": 73728,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 282328,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-107-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_client_counter_numbers_varint",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "varint",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "2fa12939f0136b31565a5809e22478910a1c1289bb27223dcb90ef629befde7c",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 45056,
+      "storageBytesPerDocument": 45056,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 39148,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-109-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_client_counter_numbers_json",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "json",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "7dcee7cd01e17b86d8846581577a3d5fda46a95b59ac30493572785df5980273",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 57344,
+      "storageBytesPerDocument": 57344,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 95983,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-111-9928597156370555882.wt"
+    },
+    {
+      "collection": "snappy_client_counter_client_counter_numbers_protobuf",
+      "dataset": "client-counter",
+      "arrangement": "client-counter-numbers",
+      "encoding": "protobuf",
+      "compressor": "snappy",
+      "compact": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storedStateHashDocument0": "5b55c9b3d9a47e209b2aa589b82abacda2f5e46c0f9af3b89b3ecf90bfca24cb",
+      "compactAfterCheckpoint": {
+        "bytesFreed": 0,
+        "ok": 1
+      },
+      "storageBytes": 45056,
+      "storageBytesPerDocument": 45056,
+      "freeBytes": 0,
+      "indexBytes": 20480,
+      "avgObjSize": 39035,
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-113-9928597156370555882.wt"
+    }
+  ]
+}
