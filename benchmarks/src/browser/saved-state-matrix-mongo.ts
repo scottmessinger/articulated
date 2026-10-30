@@ -48,9 +48,11 @@ async function main() {
     "Set an isolated temporary dbPath",
   );
   assert(
-    fs
-      .realpathSync(expected)
-      .startsWith("/private/tmp/articulated-saved-state-matrix-"),
+    ["/private/tmp/", "/tmp/"].some((dir) =>
+      fs
+        .realpathSync(expected)
+        .startsWith(`${dir}articulated-saved-state-matrix-`),
+    ),
     "Only this experiment's newly created temporary directory is allowed",
   );
   const output = path.resolve(
