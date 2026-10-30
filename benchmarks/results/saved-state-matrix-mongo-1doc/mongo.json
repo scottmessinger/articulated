@@ -1,13 +1,13 @@
 {
   "complete": true,
-  "generatedAt": "2026-10-30T00:40:54.575Z",
+  "generatedAt": "2026-10-30T01:05:08.120Z",
   "version": "8.0.23",
   "mongoGitVersion": "nogitversion",
   "nodeVersion": "v22.22.0",
   "platform": "linux",
   "arch": "x64",
   "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz",
-  "dbPath": "/tmp/articulated-saved-state-matrix-2",
+  "dbPath": "/tmp/articulated-saved-state-matrix-json-1",
   "port": 27186,
   "documents": 1,
   "runs": 11757,
@@ -45,7 +45,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 870691,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-7-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-7-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_per_run_plain",
@@ -67,7 +67,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 342347,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-9-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-9-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_per_run_float64",
@@ -89,7 +89,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 318186,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-11-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-11-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_per_run_varint",
@@ -111,51 +111,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 236548,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-13-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_random_id_per_run_string",
-      "dataset": "random",
-      "arrangement": "id-per-run",
-      "encoding": "string",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "b2dec0d269689bc87249ac6f1360573cfa4c4eec6dffedc8d22e7a05a6bd0646",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 90112,
-      "storageBytesPerDocument": 90112,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 258314,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-15-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_random_id_per_run_string_all",
-      "dataset": "random",
-      "arrangement": "id-per-run",
-      "encoding": "string-all",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "540d991131d54465b43bb313aa154bab369155661a2ebb8de306743f7097fdeb",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 73728,
-      "storageBytesPerDocument": 73728,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 140096,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-17-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-13-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_per_run_json",
@@ -177,7 +133,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 163618,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-19-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-15-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_per_run_protobuf",
@@ -199,7 +155,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 130017,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-21-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-17-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_once_plain",
@@ -221,7 +177,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 337696,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-23-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-19-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_once_float64",
@@ -243,7 +199,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 289374,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-25-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-21-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_once_varint",
@@ -265,51 +221,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 125729,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-27-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_random_id_once_string",
-      "dataset": "random",
-      "arrangement": "id-once",
-      "encoding": "string",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "6cebecbcd6643efc863ce1c87dff88cb3d7762e6c6c7cae8673cb9527fd18ab4",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 81920,
-      "storageBytesPerDocument": 81920,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 161503,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-29-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_random_id_once_string_all",
-      "dataset": "random",
-      "arrangement": "id-once",
-      "encoding": "string-all",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "90f7c2c24023c13e6b82be8d655ce463f3e1bc5bc6938be5e646fbbcfcc857c7",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 73728,
-      "storageBytesPerDocument": 73728,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 108792,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-31-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-23-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_once_json",
@@ -331,7 +243,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 119566,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-33-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-25-9928597156370555882.wt"
     },
     {
       "collection": "zstd_random_id_once_protobuf",
@@ -353,7 +265,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 78319,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-35-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-27-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_objects_plain",
@@ -375,7 +287,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 938065,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-37-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-29-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_per_run_plain",
@@ -397,7 +309,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 409721,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-39-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-31-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_per_run_float64",
@@ -419,7 +331,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 385560,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-41-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-33-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_per_run_varint",
@@ -441,51 +353,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 303922,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-43-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_client_counter_id_per_run_string",
-      "dataset": "client-counter",
-      "arrangement": "id-per-run",
-      "encoding": "string",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "bf35ffaf206f07298c0e72951edf0e6bf21201c72b84d004ed9d31c586a11c41",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 65536,
-      "storageBytesPerDocument": 65536,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 325688,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-45-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_client_counter_id_per_run_string_all",
-      "dataset": "client-counter",
-      "arrangement": "id-per-run",
-      "encoding": "string-all",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "32b149b51f14d986102d2fc4cc6155f6bd956ab8531cadb3402c981d719d586f",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 49152,
-      "storageBytesPerDocument": 49152,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 207470,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-47-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-35-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_per_run_json",
@@ -507,7 +375,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 230992,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-49-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-37-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_per_run_protobuf",
@@ -529,7 +397,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 197391,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-51-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-39-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_once_plain",
@@ -551,7 +419,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 368656,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-53-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-41-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_once_float64",
@@ -573,7 +441,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 320334,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-55-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-43-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_once_varint",
@@ -595,51 +463,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 156689,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-57-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_client_counter_id_once_string",
-      "dataset": "client-counter",
-      "arrangement": "id-once",
-      "encoding": "string",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "1501dd7bd6831ee95a519040767bbba09892797674e72db3b42265adece9deff",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 57344,
-      "storageBytesPerDocument": 57344,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 192463,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-59-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_client_counter_id_once_string_all",
-      "dataset": "client-counter",
-      "arrangement": "id-once",
-      "encoding": "string-all",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "497bb4025af9c589137a3f78782d8d24c084e4dd3b6291cfe7d969f87827238e",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 49152,
-      "storageBytesPerDocument": 49152,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 139752,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-61-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-45-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_once_json",
@@ -661,7 +485,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 150526,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-63-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-47-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_id_once_protobuf",
@@ -683,7 +507,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 109279,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-65-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-49-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_client_counter_numbers_plain",
@@ -705,7 +529,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 354811,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-67-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-51-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_client_counter_numbers_float64",
@@ -727,7 +551,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 282328,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-69-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-53-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_client_counter_numbers_varint",
@@ -749,51 +573,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 39148,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-71-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_client_counter_client_counter_numbers_string",
-      "dataset": "client-counter",
-      "arrangement": "client-counter-numbers",
-      "encoding": "string",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "19b76c00b4011fdf6f37bc5a2cf54f9ec54c6d85508ac94d4971860d1505cdb4",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 40960,
-      "storageBytesPerDocument": 40960,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 95977,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-73-14491169069994534111.wt"
-    },
-    {
-      "collection": "zstd_client_counter_client_counter_numbers_string_all",
-      "dataset": "client-counter",
-      "arrangement": "client-counter-numbers",
-      "encoding": "string-all",
-      "compressor": "zstd",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "21be004ceafcdcc62143f083db5965946454be36ec0df97eb3f1697599a99239",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 40960,
-      "storageBytesPerDocument": 40960,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 95969,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-75-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-55-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_client_counter_numbers_json",
@@ -815,7 +595,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 95983,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-77-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-57-9928597156370555882.wt"
     },
     {
       "collection": "zstd_client_counter_client_counter_numbers_protobuf",
@@ -837,7 +617,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 39035,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-79-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-59-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_objects_plain",
@@ -859,7 +639,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 870691,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-81-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-61-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_per_run_plain",
@@ -881,7 +661,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 342347,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-83-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-63-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_per_run_float64",
@@ -903,7 +683,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 318186,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-85-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-65-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_per_run_varint",
@@ -925,51 +705,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 236548,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-87-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_random_id_per_run_string",
-      "dataset": "random",
-      "arrangement": "id-per-run",
-      "encoding": "string",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "b2dec0d269689bc87249ac6f1360573cfa4c4eec6dffedc8d22e7a05a6bd0646",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 143360,
-      "storageBytesPerDocument": 143360,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 258314,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-89-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_random_id_per_run_string_all",
-      "dataset": "random",
-      "arrangement": "id-per-run",
-      "encoding": "string-all",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "540d991131d54465b43bb313aa154bab369155661a2ebb8de306743f7097fdeb",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 98304,
-      "storageBytesPerDocument": 98304,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 140096,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-91-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-67-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_per_run_json",
@@ -991,7 +727,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 163618,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-93-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-69-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_per_run_protobuf",
@@ -1013,7 +749,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 130017,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-95-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-71-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_once_plain",
@@ -1035,7 +771,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 337696,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-97-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-73-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_once_float64",
@@ -1057,7 +793,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 289374,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-99-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-75-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_once_varint",
@@ -1079,51 +815,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 125729,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-101-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_random_id_once_string",
-      "dataset": "random",
-      "arrangement": "id-once",
-      "encoding": "string",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "6cebecbcd6643efc863ce1c87dff88cb3d7762e6c6c7cae8673cb9527fd18ab4",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 118784,
-      "storageBytesPerDocument": 118784,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 161503,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-103-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_random_id_once_string_all",
-      "dataset": "random",
-      "arrangement": "id-once",
-      "encoding": "string-all",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "90f7c2c24023c13e6b82be8d655ce463f3e1bc5bc6938be5e646fbbcfcc857c7",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 102400,
-      "storageBytesPerDocument": 102400,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 108792,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-105-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-77-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_once_json",
@@ -1145,7 +837,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 119566,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-107-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-79-9928597156370555882.wt"
     },
     {
       "collection": "snappy_random_id_once_protobuf",
@@ -1167,7 +859,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 78319,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-109-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-81-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_objects_plain",
@@ -1189,7 +881,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 938065,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-111-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-83-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_per_run_plain",
@@ -1211,7 +903,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 409721,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-113-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-85-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_per_run_float64",
@@ -1233,7 +925,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 385560,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-115-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-87-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_per_run_varint",
@@ -1255,51 +947,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 303922,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-117-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_client_counter_id_per_run_string",
-      "dataset": "client-counter",
-      "arrangement": "id-per-run",
-      "encoding": "string",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "bf35ffaf206f07298c0e72951edf0e6bf21201c72b84d004ed9d31c586a11c41",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 114688,
-      "storageBytesPerDocument": 114688,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 325688,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-119-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_client_counter_id_per_run_string_all",
-      "dataset": "client-counter",
-      "arrangement": "id-per-run",
-      "encoding": "string-all",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "32b149b51f14d986102d2fc4cc6155f6bd956ab8531cadb3402c981d719d586f",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 77824,
-      "storageBytesPerDocument": 77824,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 207470,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-121-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-89-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_per_run_json",
@@ -1321,7 +969,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 230992,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-123-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-91-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_per_run_protobuf",
@@ -1343,7 +991,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 197391,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-125-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-93-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_once_plain",
@@ -1365,7 +1013,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 368656,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-127-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-95-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_once_float64",
@@ -1387,7 +1035,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 320334,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-129-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-97-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_once_varint",
@@ -1409,51 +1057,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 156689,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-131-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_client_counter_id_once_string",
-      "dataset": "client-counter",
-      "arrangement": "id-once",
-      "encoding": "string",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "1501dd7bd6831ee95a519040767bbba09892797674e72db3b42265adece9deff",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 94208,
-      "storageBytesPerDocument": 94208,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 192463,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-133-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_client_counter_id_once_string_all",
-      "dataset": "client-counter",
-      "arrangement": "id-once",
-      "encoding": "string-all",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "497bb4025af9c589137a3f78782d8d24c084e4dd3b6291cfe7d969f87827238e",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 73728,
-      "storageBytesPerDocument": 73728,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 139752,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-135-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-99-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_once_json",
@@ -1475,7 +1079,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 150526,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-137-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-101-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_id_once_protobuf",
@@ -1497,7 +1101,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 109279,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-139-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-103-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_client_counter_numbers_plain",
@@ -1519,7 +1123,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 354811,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-141-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-105-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_client_counter_numbers_float64",
@@ -1541,7 +1145,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 282328,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-143-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-107-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_client_counter_numbers_varint",
@@ -1563,51 +1167,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 39148,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-145-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_client_counter_client_counter_numbers_string",
-      "dataset": "client-counter",
-      "arrangement": "client-counter-numbers",
-      "encoding": "string",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "19b76c00b4011fdf6f37bc5a2cf54f9ec54c6d85508ac94d4971860d1505cdb4",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 57344,
-      "storageBytesPerDocument": 57344,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 95977,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-147-14491169069994534111.wt"
-    },
-    {
-      "collection": "snappy_client_counter_client_counter_numbers_string_all",
-      "dataset": "client-counter",
-      "arrangement": "client-counter-numbers",
-      "encoding": "string-all",
-      "compressor": "snappy",
-      "compact": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storedStateHashDocument0": "21be004ceafcdcc62143f083db5965946454be36ec0df97eb3f1697599a99239",
-      "compactAfterCheckpoint": {
-        "bytesFreed": 0,
-        "ok": 1
-      },
-      "storageBytes": 57344,
-      "storageBytesPerDocument": 57344,
-      "freeBytes": 0,
-      "indexBytes": 20480,
-      "avgObjSize": 95969,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-149-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-109-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_client_counter_numbers_json",
@@ -1629,7 +1189,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 95983,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-151-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-111-9928597156370555882.wt"
     },
     {
       "collection": "snappy_client_counter_client_counter_numbers_protobuf",
@@ -1651,7 +1211,7 @@
       "freeBytes": 0,
       "indexBytes": 20480,
       "avgObjSize": 39035,
-      "collectionFile": "/tmp/articulated-saved-state-matrix-2/collection-153-14491169069994534111.wt"
+      "collectionFile": "/tmp/articulated-saved-state-matrix-json-1/collection-113-9928597156370555882.wt"
     }
   ]
 }
