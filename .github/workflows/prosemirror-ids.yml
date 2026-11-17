@@ -1,0 +1,23 @@
+name: prosemirror-ids
+
+on:
+  pull_request:
+    paths: ["prosemirror-ids/**"]
+  push:
+    branches: [master]
+    paths: ["prosemirror-ids/**"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: prosemirror-ids
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
