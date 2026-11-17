@@ -4,7 +4,8 @@
   "description": "Articulated ids inside unforked ProseMirror, tested against plain Articulated",
   "scripts": {
     "test": "node --import tsx --test test/*.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "example": "tsx examples/usage.ts"
   },
   "dependencies": {
     "articulated": "1.3.2",
